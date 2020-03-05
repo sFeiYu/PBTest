@@ -14,17 +14,21 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - KCSecurityUtil (1.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
+  - KCSecurityUtil (~> 1.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - KCSecurityUtil
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  KCSecurityUtil: 50631a5c4bd003b5e95947b521c89c05016135a7
 
-PODFILE CHECKSUM: 05baca8f8d4e7170ba44a29562023a95d5105336
+PODFILE CHECKSUM: be58d5ea4d5f6d428104de404e5c8405ad213abf
 
 COCOAPODS: 1.8.4
