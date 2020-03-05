@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "AppAuditStateQuery.pbobjc.h"
+#import "AFNetworking.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *btnRequest;
 
 @end
 
@@ -16,8 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [_btnRequest addTarget:self action:@selector(requestEvent:) forControlEvents:UIControlEventTouchUpInside];
 }
+
+- (void)requestEvent:(UIButton *)btn
+{
+//    AESKey =  @"4EK8C5M9W0A1XI93"
+    AppAuditStateQueryOnPack *onPack = [AppAuditStateQueryOnPack new];
+    onPack.versionNumber = @"3.0.0";
+    
+    
+}
+
 
 
 @end
